@@ -1,0 +1,6 @@
+.DS_Store
+DerivedData
+Pods
+Podfile.lock
+xcuserdata
+Resources/Secrets.plist

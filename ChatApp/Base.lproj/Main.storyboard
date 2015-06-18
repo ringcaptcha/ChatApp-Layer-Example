@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="l7T-pO-GYP">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="aHl-ho-rgE">
+            <objects>
+                <viewController id="8KT-fT-q7b" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sba-Lk-0NI"/>
+                        <viewControllerLayoutGuide type="bottom" id="yFD-SD-1Jw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DdC-hD-Mei">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ChatApp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCN-jl-XTk">
+                                <rect key="frame" x="239" y="286" width="123" height="28"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="cX0-eP-I9v">
+                                <rect key="frame" x="290" y="351" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v1.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSe-wj-fvd">
+                                <rect key="frame" x="284" y="559" width="33" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connecting to Layer ..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdg-c3-lIB">
+                                <rect key="frame" x="213" y="322" width="175" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="64" placeholderIntrinsicHeight="62" image="layer-logo-gray@3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y2n-K3-zyu">
+                                <rect key="frame" x="268" y="216" width="64" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="giP-Eb-Q4i"/>
+                                    <constraint firstAttribute="width" constant="64" id="pfB-Js-PCQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9835974694502474" green="0.9835974694502474" blue="0.9835974694502474" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="rdg-c3-lIB" firstAttribute="centerX" secondItem="GCN-jl-XTk" secondAttribute="centerX" id="1HJ-RL-8yw"/>
+                            <constraint firstItem="cX0-eP-I9v" firstAttribute="centerX" secondItem="GCN-jl-XTk" secondAttribute="centerX" constant="-0.5" id="1oR-Dy-P9q"/>
+                            <constraint firstItem="GSe-wj-fvd" firstAttribute="centerX" secondItem="rdg-c3-lIB" secondAttribute="centerX" id="73F-0E-jvH"/>
+                            <constraint firstItem="cX0-eP-I9v" firstAttribute="centerX" secondItem="rdg-c3-lIB" secondAttribute="centerX" constant="-0.5" id="A1h-cv-g0u"/>
+                            <constraint firstAttribute="centerY" secondItem="cX0-eP-I9v" secondAttribute="centerY" constant="-28" id="Qf4-r3-O1e"/>
+                            <constraint firstAttribute="centerY" secondItem="GSe-wj-fvd" secondAttribute="centerY" constant="-269.5" id="S7E-xS-w9A"/>
+                            <constraint firstAttribute="centerX" secondItem="GSe-wj-fvd" secondAttribute="centerX" id="YE2-SK-FyO"/>
+                            <constraint firstAttribute="centerY" secondItem="cX0-eP-I9v" secondAttribute="centerY" constant="36" id="bKe-rE-Jyz"/>
+                            <constraint firstItem="Y2n-K3-zyu" firstAttribute="centerX" secondItem="GCN-jl-XTk" secondAttribute="centerX" constant="-0.5" id="cXE-iK-AaE"/>
+                            <constraint firstItem="cX0-eP-I9v" firstAttribute="centerX" secondItem="GCN-jl-XTk" secondAttribute="centerX" id="deb-tx-Ekj"/>
+                            <constraint firstAttribute="centerY" secondItem="Y2n-K3-zyu" secondAttribute="centerY" constant="53" id="gdQ-Gk-prz"/>
+                            <constraint firstItem="cX0-eP-I9v" firstAttribute="centerX" secondItem="GCN-jl-XTk" secondAttribute="centerX" id="iPW-27-Wbr"/>
+                            <constraint firstAttribute="centerY" secondItem="GCN-jl-XTk" secondAttribute="centerY" constant="0.5" id="oyR-jW-6IB"/>
+                            <constraint firstItem="GSe-wj-fvd" firstAttribute="centerX" secondItem="cX0-eP-I9v" secondAttribute="centerX" id="uay-46-MK5"/>
+                            <constraint firstAttribute="centerY" secondItem="rdg-c3-lIB" secondAttribute="centerY" constant="-32.5" id="uu2-TQ-byc"/>
+                            <constraint firstAttribute="centerX" secondItem="GCN-jl-XTk" secondAttribute="centerX" id="vdC-7B-PQL"/>
+                            <constraint firstAttribute="centerY" secondItem="cX0-eP-I9v" secondAttribute="centerY" constant="-61" id="voZ-6f-6Bn"/>
+                            <constraint firstAttribute="centerY" secondItem="GSe-wj-fvd" secondAttribute="centerY" constant="-56.5" id="xtL-7J-Ag9"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1oR-Dy-P9q"/>
+                                <exclude reference="Qf4-r3-O1e"/>
+                                <exclude reference="bKe-rE-Jyz"/>
+                                <exclude reference="deb-tx-Ekj"/>
+                                <exclude reference="iPW-27-Wbr"/>
+                                <exclude reference="YE2-SK-FyO"/>
+                                <exclude reference="uay-46-MK5"/>
+                                <exclude reference="xtL-7J-Ag9"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="0aB-s9-leb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="74P-Nc-t7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292" y="-95"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yiV-1g-cQw">
+            <objects>
+                <navigationController id="l7T-pO-GYP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BCA-Zt-m0f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8KT-fT-q7b" kind="relationship" relationship="rootViewController" id="JpV-Rn-6JG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MdB-ez-KgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-532" y="-95"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="layer-logo-gray@3x.png" width="54" height="54"/>
+    </resources>
+</document>
