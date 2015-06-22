@@ -33,6 +33,10 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     NSLog(@"viewDidAppear");
+   
+    [super viewWillAppear:animated];
+    [[self navigationController] setNavigationBarHidden:NO animated:YES];
+ 
 }
 
 - (void)didReceiveMemoryWarning {
