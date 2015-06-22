@@ -4,3 +4,4 @@ Pods
 Podfile.lock
 xcuserdata
 Resources/Secrets.plist
+ChatApp.xcworkspace/xcshareddata
