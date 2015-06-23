@@ -11,7 +11,7 @@ This application requires Xcode and the iOS SDK v8.0. Dependencies are managed v
 1. Clone the project from Github: `$ git clone https://github.com/ringcaptcha/ChatApp-Layer-Example.git`
 2. Install the dependencies in the root directory via CocoaPods: `$ pod install`
 3. Open `ChatApp.xcworkspace` in Xcode.
-4. Add a plist file named `Secrets.plist` under `Resources` with your `RingCaptchaAppKey` , `RingCaptchaSecretKey` , `LayerAppId`, and `AuthenticationURL`.
+4. Add a plist file named `Secrets.plist` under `Resources` with your `RingCaptchaAppKey` , `RingCaptchaSecretKey` , `LayerAppId`, and `AuthenticationURL`. -- `AuthenticationURL` must be a HTTP URL to GET with user and nonce parameters of the form: `http://siteexample.com/layer/jwt?user=%@&nonce=%@`
 5. Build and run the application on your Simulator and begin messaging!
 
 ## Highlights
